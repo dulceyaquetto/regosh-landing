@@ -1,4 +1,7 @@
-# LandingPlate
+# LandingPlate (Modified Version)
+
+##### UPDATE
+> This modificaction of LandingPlate was fixed of some issues and adapted to be used with Stylus preprocessor style.
 
 > A modern landing page boilerplate with webpack and bootstrap.
 
