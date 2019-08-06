@@ -1,0 +1,50 @@
+
+.item-grid
+  margin 40px 0 0 0 
+  display: grid
+  grid-gap: 0px
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+  grid-auto-rows: 200px
+  grid-auto-flow: dense
+.item
+  width 100%
+  height 200px
+  background gray
+  overflow: hidden
+  position: relative
+  cursor pointer
+  user-select none
+.item > img
+  width 100%
+
+.item::before
+  content ''
+  width 100%
+  height 200px
+  background: #000000b5
+  position: absolute
+  // z-index: 5
+  top: 0
+  left: 0
+  opacity 0
+  transition all .2s ease
+.item::after
+  content 'HiperObjectos'
+  width 100%
+  height 200px
+  color white
+  position: absolute
+  // z-index: 6
+  top calc(50% - 20px)
+  right: 0
+  opacity 0
+  text-align: center
+
+  font-size 11px
+  letter-spacing: .25em
+  text-transform: uppercase
+
+.item:hover::after
+.item:hover::before
+  // display inline-block
+  opacity 1
