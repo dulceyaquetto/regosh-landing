@@ -2,7 +2,7 @@
 <div class="section projects-section">
     <h3>Proyectos</h3>
     <div class="item-grid">
-        <div class="item">
+        <!-- <div class="item">
             <img src="https://source.unsplash.com/random/200x200" alt="">
         </div>
         <div class="item">
@@ -22,7 +22,7 @@
         </div>
         <div class="item">
             <img src="https://source.unsplash.com/random/200x200" alt="">
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -30,3 +30,12 @@
 <div class="section">
     <h3>Seccion 2</h3>
 </div>
+
+<script>
+    const projectItems = document.querySelector('.item-grid').children
+    for(let el of projectItems) {
+        el.addEventListener('click', (e) => {
+            document.querySelector('.dialog--fullscreen').classList.add('show')
+        })
+    }
+</script>
