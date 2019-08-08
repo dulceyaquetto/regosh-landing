@@ -1,0 +1,376 @@
+{
+    "projects": [
+        { 
+            "title": "Monitor Ambiental",
+            "subtitle": "Ciencia para la ecología",
+            "description": "Buscamos criar um sistema que permita monitorar a qualidade do ar em áreas de alto risco de poluição ambiental, desenvolvendo dispositivos de monitoramento baseados em sensores de baixo custo.",
+            "img_url": "../assets/monitormedioambiente_360.png",
+            "portrait_img_url": "../assets/monitormedioambiente_600x1000.png"
+        },
+        { 
+            "title": "Biofabricación micelial",
+            "subtitle": "Sustentabilidad y ecología",
+            "description": "Projeto que visa cultivar fungos em substratos orgânicos, de forma que cresçam seus micélios e formem materiais biodegradáveis e sustentáveis.",
+            "img_url": "../assets/biocosas_360.png",
+            "portrait_img_url": "../assets/biocosas_600x1000.png"
+        },
+        { 
+            "title": "Bioscopio",
+            "subtitle": "Agroecología y sociedad",
+            "description": "Projeto para realizar um microscópio para detectar microorganismos que se beneficiam em biofertilizantes para comunidades e populações rurais",
+            "img_url": "../assets/bioscopio_360.png",
+            "portrait_img_url": "../assets/bioscopio_600x1000.png"
+        },
+        { 
+            "title": "BioTextil",
+            "subtitle": "Incubadora para Biofabricación",
+            "description": "Projeto que busca desenvolver incubadoras para pesquisa de crescimento de fungos para gerar materiais biodegradáveis e sustentáveis",
+            "img_url": "../assets/biotextil_360.png",
+            "portrait_img_url": "../assets/biotextil_600x1000.png"
+        },
+        { 
+            "title": "Cámara Respirasuelo",
+            "subtitle": "Agroecología y sociedad",
+            "description": "Projeto que desenvolve uma câmara de respiração de piso para estimar atividades microbianas, portáteis e de baixo custo.",
+            "img_url": "../assets/camararespirasuelo_360.png",
+            "portrait_img_url": "../assets/camararespirasuelo_600x1000.png"
+        },
+        { 
+            "title": "Cardiorespirómetro",
+            "subtitle": "Próximamente:Médicina científica",
+            "description": "O Cardioresirômetro é um projeto sensorial e colaborativo para tornar as ferramentas de diagnóstico médico mais acessíveis para pessoas com doenças cardiovasculares ou respiratórias.",
+            "img_url": "../assets/cardiorespirometro_360.png",
+            "portrait_img_url": "../assets/cardiorespirometro_600x1000.png"
+        },
+        { 
+            "title": "Mini CNC",
+            "subtitle": "Hiperobjeto",
+            "description": "A Bancada de Hiperobjetos é composta por um conjunto de máquinas de fabricação digital. O minicnc faz parte deste projeto buscando socializar a realização de máquinas que produzam objetos com materiais acessíveis.",
+            "img_url": "../assets/cnc_360.png",
+            "portrait_img_url": "../assets/cnc_600x1000.png"
+        },
+        { 
+            "title": "Delitos Ambientales",
+            "subtitle": "Próximamente: Ecología y sociedad",
+            "description": "Aplicação de técnicas relacionadas ao Aprendizado Automático para detecção automática de crimes ambientais e / ou desastres naturais.",
+            "img_url": "../assets/delitosambientales_360.png",
+            "portrait_img_url": "../assets/delitosambientales_600x1000.png"
+        },
+        { 
+            "title": "Laboratorio de Física",
+            "subtitle": "Ciencia y educación",
+            "description": "Projeto de socialização de desenvolvimentos de interface para uso de máquinas de exercícios físicos utilizados em universidades.",
+            "img_url": "../assets/labfisica_360.png",
+            "portrait_img_url": "../assets/labfisica_600x1000.png"
+        },
+        { 
+            "title": "Microaerogenerador",
+            "subtitle": "Producción de Energía",
+            "description": "MicroAeroGenerador é parte de una pesquisa que desenvolve projetos de microgeração distribuída, fontes renovaveis, armazenamento, infraestrutura e gestão de energia.",
+            "img_url": "../assets/microaerogenerador_360.png",
+            "portrait_img_url": "../assets/microaerogenerador_600x1000.png"
+        }
+    ],
+    "members": {
+        "Residencia 2019. Porto Alegre, Br": [
+            {
+                "nickname": "Anabela Laudecina",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Andrea Rincón Álvarez",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Anthony Aróstegui",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Catalina De Pablo Alday",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Claudia Gaete Zuñiga",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Dulce Alarcón Yaquetto",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Iván García Escobar",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Laura Tenelanda Osorio",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Nicolás Agustín Méndez",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Martín Oña",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Pablo Cremades",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Pablo Torres Bonilla",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Palmira Benavente",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Sol Verniers",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "Valentina Bessonart",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            }
+            
+        ]
+    },
+    "shares": [
+        {
+            "type": "instagram",
+            "img_url": "../assets/logos/instagram.svg",
+            "link": "https://www.instagram.com/tecslivreslatinas/?hl=es"
+        },
+        {
+            "type": "twitter",
+            "img_url": "../assets/logos/twitter.svg",
+            "link": "https://www.instagram.com/tecslivreslatinas/?hl=es"
+        }
+    ]
+}

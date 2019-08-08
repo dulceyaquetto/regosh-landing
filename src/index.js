@@ -1,37 +1,19 @@
 import './stylus/main.styl'
 
-import { ProjectList, Dialog } from './scripts/structs.js'
+import data from './data.json'
+import { ProjectList, Dialog, MemberList, ShareList } from './scripts/structs.js'
+import { randomizeLetters, TextEffect } from './scripts/effects.js'
 
-var dialog = new Dialog('.dialog--fullscreen')
+var projectDialog = new Dialog('.dialog--fullscreen')
 var projectList = new ProjectList([
-    { 
-        'title': 'Micromanipulator',
-        'subtitle': 'Projecto Legal',
-        'description': 'Projecto Legal',
-        'img_url': 'https://source.unsplash.com/random/200x200'
-    },
-    { 
-        'title': 'HiperObjectos',
-        'subtitle': 'Projecto Legal',
-        'description': 'Projecto Legal',
-        'img_url': 'https://source.unsplash.com/random/200x200'
-    },
-    { 
-        'title': 'Micromanipulator',
-        'subtitle': 'Projecto Legal',
-        'description': 'Projecto Legal',
-        'img_url': 'https://source.unsplash.com/random/200x200'
-    },
-    { 
-        'title': 'Micromanipulator',
-        'subtitle': 'Projecto Legal',
-        'description': 'Projecto Legal',
-        'img_url': 'https://source.unsplash.com/random/200x200'
-    },
-    { 
-        'title': 'Micromanipulator',
-        'subtitle': 'Projecto Legal',
-        'description': 'Projecto Legal',
-        'img_url': 'https://source.unsplash.com/random/200x200'
-    }
+    ...data.projects
 ], '.item-grid')
+
+var memberList = new MemberList(data.members || [], '.section.team')
+
+new ShareList(data.shares || [], '.section.share')
+
+const titleEl = new TextEffect('#front-title')
+setTimeout(() => {
+    titleEl.animate()
+}, 1000)

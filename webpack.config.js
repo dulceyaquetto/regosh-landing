@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const path = require('path');
 const isDev = process.env.NODE_ENV !== 'production';
@@ -81,6 +82,9 @@ module.exports = {
             inject: 'body',
             filename: 'index.html'
         }),
+        new CopyPlugin([
+            { from: 'src/assets', to: 'assets' },
+        ]),
         ...envPlugins
     ],
     optimization: {

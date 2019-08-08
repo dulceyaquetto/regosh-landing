@@ -42,31 +42,24 @@ html, body
 
 .top-bar
   position absolute
-  top 50px
+  top: 40px
   left 0
   z-index 4
   width 100%
+  text-align: center
 .top-bar div
   color lightColor
   display inline-block
   padding 0px 20px
-  font-size 14px
+  font-size: 10px
   letter-spacing: .25em
   text-transform: uppercase
   cursor pointer
   user-select none
 .top-bar .logo-1
-  position absolute
-  top 0
-  left 50px
 .top-bar .logo-2
-  position absolute
-  top 0
-  right 50px
 .top-bar .logo-3
-  position absolute
-  top 0
-  right 150px
+  position relative
 
 .content-center
   display: table-cell
@@ -79,21 +72,96 @@ html, body
   border 5px lightColor solid
   padding 10px 24px 2px 24px
   border-radius 2px
-  font-size 36px
+  font-size 96px
+  font-size: 48px
   font-family: BebasNeue
   font-weight: bold
   transition all .2s ease
 .title:hover
     text-shadow 4px 4px 1px #00ec336b, 0px 4px 1px #17eaffd6, 4px 0px 1px #ff0277d6
 
+.text
+  letter-spacing: .25em
+  text-transform: uppercase
+  font-size: 11px
+  color whiteColor
+
 .phrase
   letter-spacing: .25em
   text-transform: uppercase
   font-size: 11px
-  margin 32px 0 0 0
+  margin: 32px 0px 0 0
   font-family: Arial
   color lightColor
+  & p
+    display: inline-block
+    margin: 0
 
 .projects-section
   max-width 700px
   margin 0 auto 0 auto
+.section.about
+.section.team
+.section.share
+  max-width: 700px
+  margin: 0 auto 0 auto
+.section.share
+  text-align: center
+  padding 0 0 40px 0
+.section.share p
+  padding 20px 0 0 0
+  color whiteColor
+.section.about p
+  padding: 0 12px 0 12px
+
+.residence-label
+  text-align: center
+  font-size 11px
+  letter-spacing: .25em
+  text-transform: uppercase
+  color lightColor
+  margin 80px 0 40px 0
+.member-item > img
+  width: 100px
+  border-radius: 90px
+// .member-item:hover .mini-dialog
+//   display: inline-block
+  
+
+.share-items-container
+  text-align: center
+.share-item
+  display inline-block
+  margin 20px
+.share-item img
+  width 24px
+
+.hidden
+	position: absolute
+	overflow: hidden
+	width: 0
+	height: 0
+	pointer-events: none
+
+@media screen and (min-width: 800px)
+  .top-bar .logo-1
+    position absolute
+    top 0
+    left 50px
+  .top-bar .logo-2
+    position absolute
+    top 0
+    right 50px
+  .top-bar .logo-3
+    position absolute
+    top 0
+    right 150px
+  .content-center
+    padding: 0 70px
+    text-align: left
+  .phrase
+    margin: 32px 20px 0 0
+  .phrase > p
+    font-size: 14px
+  .title
+    font-size 96px

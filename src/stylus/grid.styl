@@ -48,3 +48,32 @@
 .item:hover::before
   // display inline-block
   opacity 1
+
+// type 2
+.residence-items
+  margin 40px 0 0 0 
+  display: grid
+  grid-gap: 0px
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+  grid-auto-rows: 180px
+  grid-auto-flow: dense
+.member-item
+  height: auto
+  position: relative
+  cursor pointer
+  user-select none
+  text-align: center
+  display: inline-block
+  justify-self: center
+  align-self: center
+// .member-item > img
+//   width 100%
+
+@media screen and (max-width: 800px)
+  .item::after
+  .item::before
+    opacity 1
+
+@media screen and (min-width: 800px)
+  .residence-items
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))

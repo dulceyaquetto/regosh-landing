@@ -1,0 +1,204 @@
+{
+    "projects": [
+        { 
+            "title": "Monitor Ambiental",
+            "subtitle": "Lorem",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/monitormedioambiente_360.png",
+            "portrait_img_url": "../assets/monitormedioambiente_600x1000.png"
+        },
+        { 
+            "title": "Biocosas",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/biocosas_360.png",
+            "portrait_img_url": "../assets/biocosas_600x1000.png"
+        },
+        { 
+            "title": "Bioscopio",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/bioscopio_360.png",
+            "portrait_img_url": "../assets/bioscopio_600x1000.png"
+        },
+        { 
+            "title": "BioTextil",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/biotextil_360.png",
+            "portrait_img_url": "../assets/biotextil_600x1000.png"
+        },
+        { 
+            "title": "Cámara Respirasuelo",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/camararespirasuelo_360.png",
+            "portrait_img_url": "../assets/camararespirasuelo_600x1000.png"
+        },
+        { 
+            "title": "Cardiorespirómetro",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/cardiorespirometro_360.png",
+            "portrait_img_url": "../assets/cardiorespirometro_600x1000.png"
+        },
+        { 
+            "title": "Mini CNC",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/cnc_360.png",
+            "portrait_img_url": "../assets/cnc_600x1000.png"
+        },
+        { 
+            "title": "Delitos Ambientales",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/delitosambientales_360.png",
+            "portrait_img_url": "../assets/delitosambientales_600x1000.png"
+        },
+        { 
+            "title": "Lab Física",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/labfisica_360.png",
+            "portrait_img_url": "../assets/labfisica_600x1000.png"
+        },
+        { 
+            "title": "Microaerogenerador",
+            "subtitle": "Projecto Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit.",
+            "img_url": "../assets/microaerogenerador_360.png",
+            "portrait_img_url": "../assets/microaerogenerador_600x1000.png"
+        }
+    ],
+    "members": {
+        "Residencia 2019. Porto Alegre, Br": [
+            {
+                "nickname": "anargu",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": ["#GOSH"],
+                "description": "aaa",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "anargu",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "anargu",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "anargu",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "anargu",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            },
+            {
+                "nickname": "anargu",
+                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "skills": [],
+                "tags": [],
+                "description": "",
+                "contactList": [
+                    {
+                        "type": "email",
+                        "label": "email",
+                        "value": "abc@abc.com",
+                        "link": "https://google.com"
+                    },
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                ]
+            }
+        ]
+    },
+    "shares": [
+        {
+            "type": "instagram",
+            "img_url": "../assets/logos/instagram.svg",
+            "link": "https://www.instagram.com/tecslivreslatinas/?hl=es"
+        },
+        {
+            "type": "twitter",
+            "img_url": "../assets/logos/twitter.svg",
+            "link": "https://www.instagram.com/tecslivreslatinas/?hl=es"
+        }
+    ]
+}

@@ -4,14 +4,132 @@
   top 0
   left 0
   width: 100%
-  height 100vh
+  height: 100% // 100vh
   pointer-events none
-  
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: 50px 80px 50px auto
   opacity 0
+  padding: 50px 50px
+  background: darkColor
   &.show
     z-index 100
-    background: darkColor
-    opacity 1
     pointer-events auto
   
-  // z-index: 100
+.dialog--img
+  position: absolute
+  grid-column: 1 / 2
+  grid-row: 1 / 5
+  opacity 0.2
+  align-self: center
+  & > img 
+    width: 100%
+
+
+.dialog--back
+.dialog--title
+.dialog--subtitle
+.dialog--paragraph
+  position: relative
+  z-index: 11
+  color white
+  text-transform: uppercase
+
+.dialog--back
+  grid-column: 1 / 2
+  grid-row: 1 / 2
+  align-self: center
+  justify-self: start
+.dialog--title
+  grid-column: 1 / 2
+  grid-row: 2 / 3
+  font-size: 14px
+.dialog--subtitle
+  grid-column: 1 / 2
+  grid-row: 3 / 4
+  font-size: 10px
+.dialog--paragraph
+  grid-column: 1 / 2
+  grid-row: 4 / 5
+  font-size: 10px
+
+.dialog--title
+  letter-spacing: .2rem
+.dialog--subtitle
+.dialog--paragraph
+  letter-spacing: .1rem
+.dialog--paragraph
+  word-spacing: .3rem
+
+.dialog--back button
+  background: none
+  border 0
+  padding: 0
+  margin: 0
+  outline: none
+  cursor pointer
+.dialog--back svg
+  fill lightColor
+  width: 2rem
+  height: 1.5em
+
+.mini-dialog
+  position: absolute
+  top 0
+  left 0
+  width 200px
+  height: auto
+  background: darkColor2
+  display none
+.mini-dialog--title
+.mini-dialog--description
+.mini-dialog--tags
+  text-transform: uppercase
+  letter-spacing: .2rem
+  color lightColor
+.mini-dialog--title
+  font-size: 11px
+  margin: 14px 0 20px 0
+.mini-dialog--description
+.mini-dialog--tags
+  font-size 9px
+.mini-dialog--tags
+  margin: 4px 0 20px 0
+.mini-dialog--tags::before
+  content '['
+.mini-dialog--tags::after
+  content ']'
+  
+@media screen and (min-width: 800px)
+  .dialog--fullscreen
+    grid-template-columns: 50% auto
+    grid-template-rows: 100px 100px 50px auto
+  .dialog--img
+    grid-column: 1 / 2
+    grid-row: 1 / 5
+    opacity 1
+    top: 100px
+    left: 50px
+    position: initial
+  .dialog--img > img
+    margin 0 auto 0 auto
+    width: 80%
+  
+  .dialog--back
+    grid-column: 2 / 3
+    grid-row: 1 / 2
+    align-self: end
+  .dialog--title
+    grid-column: 2 / 3
+    grid-row: 2 / 3
+    font-size: 32px
+  .dialog--subtitle
+    grid-column: 2 / 3
+    grid-row: 3 / 4
+  .dialog--paragraph
+    grid-column: 2 / 3
+    grid-row: 4 / 5
+
+@media screen and (min-width: 1200px)
+  .dialog--img
+    top: 0
