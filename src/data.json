@@ -366,11 +366,6 @@
             "type": "instagram",
             "img_url": "../assets/logos/instagram.svg",
             "link": "https://www.instagram.com/tecslivreslatinas/?hl=es"
-        },
-        {
-            "type": "twitter",
-            "img_url": "../assets/logos/twitter.svg",
-            "link": "https://www.instagram.com/tecslivreslatinas/?hl=es"
         }
     ]
 }
