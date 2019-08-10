@@ -185,9 +185,6 @@ export class MemberList {
                 memberElem.appendChild(imgElem)
                 residenceItemsDiv.appendChild(memberElem)
                 const member = new Member(rawMemberData, memberElem)
-                // if (i === 0) {
-                //     member.show()
-                // }
                 return member
             })
         }
@@ -198,20 +195,54 @@ export class Member {
     constructor(data, elem) {
         this.data = data
         this.el = elem
+        this.mobileDevice = window.innerWidth < 700
+        this.leftMargin = this.mobileDevice ? 0 : (window.innerWidth - 700) / 2
+        this.containerWidth = this.mobileDevice ? window.innerWidth : 700
 
         const miniDialog = document.createElement('div')
         this.dialogElem = miniDialog
         miniDialog.classList.add('mini-dialog')
+        {
+            const closeDiv = document.createElement('div')
+            closeDiv.classList.add('mini-dialog--close')
+            closeDiv.innerHTML = `<span>&times;</span>`
+            this.dialogElem.appendChild(closeDiv)
+            closeDiv.querySelector('span').addEventListener('click', (e) => {
+                this.close()
+            })
+        }
+
         const elems = [
             { value: data.nickname, class: 'mini-dialog--title', type: 'text' },
             { value: data.description || '', class: 'mini-dialog--description', type: 'text' },
+            { value: data.skills || '#GOSH', class: 'mini-dialog--skills', type: 'array' },
             { value: data.tags || '#GOSH', class: 'mini-dialog--tags', type: 'array' },
+            { value: data.contact_list || '#GOSH', class: 'mini-dialog--contact-list', type: 'contact_list' },
             // ...(data.contactList.map(c => ({value: data. })))
         ].map(d => {
             const dialogElem = document.createElement('div')
             dialogElem.classList.add(d.class)
-            if (typeof d.type === 'array') {
-                dialogElem.innerHTML = d.value.join(', ')
+            if (d.type === 'array') {
+                dialogElem.innerHTML = d.value.map(v => `<span>${v}</span>`)
+            } else if (d.type === 'contact_list') {
+                for (let i in data.contact_list) {
+                    const contactItemData = data.contact_list[i]
+                    const contactItem = document.createElement('div')
+                    contactItem.classList.add('mini-dialog--contact-item')
+                    if (contactItemData.type === 'email') {
+                        contactItem.classList.add('email')
+                    }
+                    if (contactItemData.icon !== undefined) {
+                        contactItem.innerHTML = `
+                        <a target="_blank" href="${contactItemData.link}"><img src="${contactItemData.icon}" /></a>
+                        `
+                    } else {
+                        contactItem.innerHTML = `
+                        <a href="${contactItemData.link}">${contactItemData.value}</a>
+                        `
+                    }
+                    dialogElem.appendChild(contactItem)                    
+                }
             } else {
                 dialogElem.innerHTML = d.value
             }
@@ -223,13 +254,46 @@ export class Member {
 
         this.el.appendChild(miniDialog)
         this.el.addEventListener('mouseover', (e) => {
+            // console.log('mouseover ev', e)
             miniDialog.style.display = 'inline-block'
-            miniDialog.style.top = `${-1 * (miniDialog.offsetHeight / 3)}px`
-            miniDialog.style.left = `${-1 * (miniDialog.offsetWidth / 3)}px`
+            const factor = (e.clientX - this.leftMargin) / this.containerWidth
+            // console.log('factor', factor)
+            // console.log('containerWidth', this.containerWidth)
+            // console.log('leftMargin', this.leftMargin)
+            // console.log('e.clientX', e.clientX)
+            if (this.mobileDevice) {
+                if (factor <= 0.5) {
+                    // left
+                    miniDialog.style.left = `${-10}px`
+                    miniDialog.style.right = undefined
+                } else {
+                    // > 0.5, right
+                    miniDialog.style.left = undefined
+                    miniDialog.style.right = `${0}px`
+                }
+            } else {
+                if (factor <= 0.3) {
+                    // left
+                    miniDialog.style.left = `${0}px`
+                    miniDialog.style.right = undefined
+                } else if (factor > 0.3 && factor < 0.7) {
+                    // middle
+                    miniDialog.style.left = `-${(miniDialog.offsetWidth/2) - 50}px`
+                    miniDialog.style.right = undefined
+                } else {
+                    // > 0.7, right
+                    miniDialog.style.left = undefined
+                    miniDialog.style.right = `${0}px`
+                }    
+            }
         })
         this.el.addEventListener('mouseout', (e) => {
-            miniDialog.style.display = 'none'
+            this.close()
         })
+    }
+
+    close() {
+        this.dialogElem.style.display = 'none'
     }
 
     show() {

@@ -75,18 +75,39 @@
 
 .mini-dialog
   position: absolute
-  top 0
-  left 0
-  width 200px
+  // top 0
+  // left 0
+  width 280px
   height: auto
   background: darkColor2
   display none
+  z-index: 10
+  padding 12px 18px
+.mini-dialog--close
+  text-align: right
+  color lightColor
+.mini-dialog--close span
+  display inline-block
 .mini-dialog--title
 .mini-dialog--description
 .mini-dialog--tags
+.mini-dialog--contact-item
   text-transform: uppercase
   letter-spacing: .2rem
   color lightColor
+.mini-dialog--tags span
+  display: inline-block
+.mini-dialog--skills span
+  text-transform: uppercase
+  letter-spacing: .2rem
+  font-size 10px
+  padding 2px 4px
+  border-radius 2px
+  background lightColor
+  color darkColor
+  display: inline-block
+  
+
 .mini-dialog--title
   font-size: 11px
   margin: 14px 0 20px 0
@@ -99,6 +120,28 @@
   content '['
 .mini-dialog--tags::after
   content ']'
+.mini-dialog--skills
+  margin 20px 0 20px 0
+.mini-dialog--contact-list
+  margin: 4px 0 20px 0
+.mini-dialog--contact-item
+  padding 8px
+  display inline-block
+.mini-dialog--contact-item.email
+  display block
+  text-align: center
+.mini-dialog--contact-item a
+  text-transform: uppercase
+  letter-spacing: .2rem
+  font-size 10px    
+.mini-dialog--contact-item a:link
+  color lightColor
+.mini-dialog--contact-item img
+  width 20px
+  transition transform .5s ease
+.mini-dialog--contact-item img:hover
+  transform scale(1.2)
+
   
 @media screen and (min-width: 800px)
   .dialog--fullscreen
@@ -129,7 +172,11 @@
   .dialog--paragraph
     grid-column: 2 / 3
     grid-row: 4 / 5
-
+  .mini-dialog
+    position: absolute
+    // top 0
+    // left 0
+    width 500px
 @media screen and (min-width: 1200px)
   .dialog--img
     top: 0

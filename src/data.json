@@ -75,11 +75,11 @@
         "Residencia 2019. Porto Alegre, Br": [
             {
                 "nickname": "Anabela Laudecina",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -94,11 +94,11 @@
             },
             {
                 "nickname": "Andrea Rincón Álvarez",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -114,29 +114,29 @@
             {
                 "nickname": "Anthony Aróstegui",
                 "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
-                "skills": [],
-                "tags": [],
-                "description": "",
-                "contactList": [
+                "skills": ["software developer", "web", "processing", "arduino", "python", "javascript", "java", "golang", "c#", "r", "dart", "flutter", "android", "sql", "nosql"],
+                "tags": ["programming", "coder", "software"],
+                "description": "Hi, I am software developer (and freelance). My interest goes around of art, electronic, articial intelligence, entrepreneurship, social projects",
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
-                        "value": "abc@abc.com",
-                        "link": "https://google.com"
+                        "value": "anthony.arostegui@gmail.com",
+                        "link": "mailto:anthony.arostegui@gmail.com"
                     },
-                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://google.com" },
-                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://google.com" },
-                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://google.com" },
-                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://google.com" }
+                    { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://web.facebook.com/anthony.arosteguiguillen", "icon": "../assets/icons/003-facebook.svg" },
+                    { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://github.com/anargu", "icon": "../assets/icons/005-github.svg" },
+                    { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://twitter.com/anargu101", "icon": "../assets/icons/002-twitter.svg" },
+                    { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://www.instagram.com/anargu101/?hl=es", "icon": "../assets/icons/001-instagram.svg" }
                 ]
             },
             {
                 "nickname": "Catalina De Pablo Alday",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -151,11 +151,11 @@
             },
             {
                 "nickname": "Claudia Gaete Zuñiga",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -170,11 +170,11 @@
             },
             {
                 "nickname": "Dulce Alarcón Yaquetto",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -189,11 +189,11 @@
             },
             {
                 "nickname": "Iván García Escobar",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -208,11 +208,11 @@
             },
             {
                 "nickname": "Laura Tenelanda Osorio",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -227,11 +227,11 @@
             },
             {
                 "nickname": "Nicolás Agustín Méndez",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -246,11 +246,11 @@
             },
             {
                 "nickname": "Martín Oña",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -265,11 +265,11 @@
             },
             {
                 "nickname": "Pablo Cremades",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -284,11 +284,11 @@
             },
             {
                 "nickname": "Pablo Torres Bonilla",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -303,11 +303,11 @@
             },
             {
                 "nickname": "Palmira Benavente",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -322,11 +322,11 @@
             },
             {
                 "nickname": "Sol Verniers",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
@@ -341,11 +341,11 @@
             },
             {
                 "nickname": "Valentina Bessonart",
-                "img_url": "https://avatars2.githubusercontent.com/u/7935037?s=460&v=4",
+                "img_url": "../assets/avatar.png",
                 "skills": [],
                 "tags": [],
                 "description": "",
-                "contactList": [
+                "contact_list": [
                     {
                         "type": "email",
                         "label": "email",
