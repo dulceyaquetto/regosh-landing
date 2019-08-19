@@ -48,6 +48,14 @@ html, body
   & img
     height 100vh
     min-width 100%
+  & a
+    position: absolute
+    left: 21px
+    bottom: 60px
+    z-index: 10
+    opacity 0.5
+  & a:hover
+    opacity 1.0
 
 .top-bar
   position absolute
@@ -158,6 +166,17 @@ html, body
 	width: 0
 	height: 0
 	pointer-events: none
+
+.tiny-footer
+  padding 4px 8px
+  background: #272727
+  color whiteColor
+  font-size: 12px
+  font-weight: 100
+.tiny-footer a
+  text-decoration: none
+  color lightColor
+  font-weight: 700
 
 @media screen and (min-width: 800px)
   .top-bar img
