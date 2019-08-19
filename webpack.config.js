@@ -8,6 +8,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 const path = require('path');
 const isDev = process.env.NODE_ENV !== 'production';
+const deploy2Github = process.env.DEPLOY_GITHUB === 'deploy-github';
 
 let envPlugins = [];
 if (isDev) {
@@ -118,6 +119,6 @@ module.exports = {
     output: {
         filename: '[name].[hash].js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: ''
+        publicPath: deploy2Github ? '/regosh-landing/assets/' : ''
     }
 }

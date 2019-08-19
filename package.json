@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
+    "build-github": "cross-env NODE_ENV=production DEPLOY_GITHUB=deploy-github webpack --mode production",
     "start": "webpack-dev-server --mode development --open --progress"
   },
   "keywords": [
