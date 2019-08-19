@@ -119,6 +119,6 @@ module.exports = {
     output: {
         filename: '[name].[hash].js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: deploy2Github ? '/regosh-landing/assets/' : ''
+        publicPath: deploy2Github ? '/regosh-landing/' : ''
     }
 }
