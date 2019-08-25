@@ -166,7 +166,7 @@ export class MemberList {
             const residenceDiv = document.createElement('div')
             residenceDiv.classList.add('residence')
             const residenceLabelDiv = document.createElement('div')
-            residenceLabelDiv.classList.add('residence-label')
+            residenceLabelDiv.classList.add('residence-label', 'text')
             residenceLabelDiv.innerHTML = residence
             const residenceItemsDiv = document.createElement('div')
             residenceItemsDiv.classList.add('residence-items')
