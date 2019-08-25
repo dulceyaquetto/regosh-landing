@@ -1,22 +1,34 @@
 import TweenMax from './TweenMax.min.js'
+import { tranlateString } from  './intl.js'
 
 export class ProjectList {
     constructor(rawData, selector) {
         this.el = null
+        this.data = rawData
         this.projects = []
 
         this.el = document.querySelector(selector)
-        this.projects = rawData.map(rawProjectData => {
+        this.projects = rawData.map((rawProjectData, i) => {
             const projectElem = document.createElement('div')
             const imgElem = document.createElement('img')
             imgElem.src = rawProjectData.img_url
             
-            projectElem.classList.add('item')
-            projectElem.setAttribute('data-after', rawProjectData.title)
+            projectElem.classList.add('item', `item-${i}`)
+            projectElem.setAttribute('data-after', tranlateString(rawProjectData, 'title'))
             projectElem.appendChild(imgElem)
 
             this.el.appendChild(projectElem)
             return new Project(rawProjectData, projectElem)
+        })
+    }
+
+    translate() {
+        this.data.forEach((d, i) => {
+            const projectElem = this.el.querySelector(`.item-${i}`)
+            projectElem.setAttribute('data-after', tranlateString(d, 'title'))
+        })
+        this.projects.forEach(p => {
+            p.translate()
         })
     }
 }
@@ -35,6 +47,8 @@ export class Project {
             if (projectDialog) projectDialog.open(this.data, e)
         })
     }
+
+    translate() {}
 }
 
 export class Dialog {
@@ -70,9 +84,9 @@ export class Dialog {
             const dialogTitleEl = this.el.querySelector('.dialog--title')
             const dialogSubtitleEl = this.el.querySelector('.dialog--subtitle')
             const dialogParagraphEl = this.el.querySelector('.dialog--paragraph')
-            dialogTitleEl.innerHTML = data.title
-            dialogSubtitleEl.innerHTML = data.subtitle
-            dialogParagraphEl.innerHTML = data.description
+            dialogTitleEl.innerHTML = tranlateString(data, 'title') // data.title
+            dialogSubtitleEl.innerHTML = tranlateString(data, 'subtitle')  // data.subtitle
+            dialogParagraphEl.innerHTML = tranlateString(data, 'description')  // data.description
             // const imageUrl = require(`${data.portrait_img_url}`)
             // this.el.querySelector('#project-img-dialog').src = imageUrl
             if (this.el.querySelector('.dialog--img') !== null) {
@@ -153,6 +167,7 @@ export class Dialog {
 export class MemberList {
     constructor(rawData, selector) {
         this.el = null
+        this.data = rawData
         this.members = {}
 
         const sectionTeamEl = document.querySelector(selector)
@@ -162,12 +177,12 @@ export class MemberList {
         sectionTeamEl.appendChild(div)
         
         this.el = div
-        for(let residence in rawData) {
+        for(let i in this.data) {
             const residenceDiv = document.createElement('div')
-            residenceDiv.classList.add('residence')
+            residenceDiv.classList.add('residence', `residence-${i}`)
             const residenceLabelDiv = document.createElement('div')
             residenceLabelDiv.classList.add('residence-label', 'text')
-            residenceLabelDiv.innerHTML = residence
+            residenceLabelDiv.innerHTML = tranlateString(rawData[i], 'title')
             const residenceItemsDiv = document.createElement('div')
             residenceItemsDiv.classList.add('residence-items')
 
@@ -175,7 +190,7 @@ export class MemberList {
             residenceDiv.appendChild(residenceItemsDiv)
             
             this.el.appendChild(residenceDiv)
-            this.members[residence] = rawData[residence].map((rawMemberData, i) => {
+            this.members[i] = rawData[i]['members'].map((rawMemberData, _) => {
                 const memberElem = document.createElement('div')
                 const imgElem = document.createElement('img')
                 imgElem.src = rawMemberData.img_url
@@ -186,6 +201,23 @@ export class MemberList {
                 residenceItemsDiv.appendChild(memberElem)
                 const member = new Member(rawMemberData, memberElem)
                 return member
+            })
+        }
+    }
+
+    setTitleMemberList() {
+        for(let i in this.data) {
+            const labelEl = this.el.querySelector(`.residence-${i} .residence-label`)
+            labelEl.innerHTML = tranlateString(this.data[i], 'title')
+        }
+    }
+
+    translate() {
+        this.setTitleMemberList()
+        for (const key in this.members) {
+            const memberGroup = this.members[key]
+            memberGroup.forEach(member => {
+                member.translate()
             })
         }
     }
@@ -212,12 +244,16 @@ export class Member {
             })
         }
 
-        const elems = [
+        this.dialogElemFields = [
             { value: data.nickname, class: 'mini-dialog--title', type: 'text' },
             { value: data.description || '', class: 'mini-dialog--description', type: 'text' },
             { value: data.skills || '#GOSH', class: 'mini-dialog--skills', type: 'array' },
             { value: data.tags || '#GOSH', class: 'mini-dialog--tags', type: 'array' },
             { value: data.contact_list || '#GOSH', class: 'mini-dialog--contact-list', type: 'contact_list' },
+        ]
+
+        const elems = [
+            ...this.dialogElemFields
             // ...(data.contactList.map(c => ({value: data. })))
         ].map(d => {
             const dialogElem = document.createElement('div')
@@ -241,10 +277,14 @@ export class Member {
                         <a href="${contactItemData.link}">${contactItemData.value}</a>
                         `
                     }
-                    dialogElem.appendChild(contactItem)                    
+                    dialogElem.appendChild(contactItem)
                 }
             } else {
-                dialogElem.innerHTML = d.value
+                if (d.class === 'mini-dialog--description') {
+                    dialogElem.innerHTML = tranlateString(this.data, 'description')
+                } else {
+                    dialogElem.innerHTML = d.value
+                }
             }
             return dialogElem
         })
@@ -252,6 +292,7 @@ export class Member {
             miniDialog.appendChild(_elem)
         })
 
+        // mini dialog
         this.el.appendChild(miniDialog)
         this.el.addEventListener('mouseover', (e) => {
             // console.log('mouseover ev', e)
@@ -298,6 +339,11 @@ export class Member {
 
     show() {
         this.dialogElem.style.display = 'inline-block'
+    }
+
+    translate() {    
+        const descriptionEl = this.dialogElem.querySelector('.mini-dialog--description')
+        descriptionEl.innerHTML = tranlateString(this.data, 'description')
     }
 }
 
