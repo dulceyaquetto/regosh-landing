@@ -8,14 +8,22 @@
 html, body
   background: #040404
   margin 0
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+  // font-family: 'Fira Sans', sans-serif;
+  // font-family: 'Roboto Condensed', sans-serif;
+  // font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+
+
+  // font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
 
 .section
   padding 80px 0 20px 0
   min-height 200px
 .section h3
-  font-size 14px
-  letter-spacing: .25em
+  font-size 22px
+  // letter-spacing: .25em
   text-transform: uppercase
   color lightColor
   text-align: center
@@ -105,22 +113,21 @@ html, body
 //     text-shadow 4px 4px 1px #00ec336b, 0px 4px 1px #17eaffd6, 4px 0px 1px #ff0277d6
 
 .text
-  letter-spacing: .25em
-  text-transform: uppercase
-  font-size: 11px
+  font-size: 14px
   color whiteColor
 
 .phrase
-  letter-spacing: .25em
-  text-transform: uppercase
-  font-size: 11px
+  // letter-spacing: .25em
+  // text-transform: uppercase
+  font-size: 14px
   margin: 32px 0px 0 0
-  font-family: Arial
+  // font-family: Arial
   color lightColor
   max-width: 700px
   & p
     display: inline-block
     margin: 0
+    padding: 0 40px
 
 .projects-section
   max-width 700px
@@ -141,11 +148,9 @@ html, body
 
 .residence-label
   text-align: center
-  font-size 11px
-  letter-spacing: .25em
-  text-transform: uppercase
   color lightColor
   margin 80px 0 40px 0
+  font-size 16px
 .member-item > img
   width: 100px
   border-radius: 90px
@@ -169,16 +174,14 @@ html, body
 	pointer-events: none
 
 .tiny-footer
-  padding 4px 8px
-  background: #272727
-  color whiteColor
+  padding: 12px 12px;
+  color white2Color
   font-size: 12px
   font-weight: 100
 .tiny-footer a
   text-decoration: none
   color lightColor
   font-weight: 700
-
 
 .track-squares
   // height: 220px
@@ -202,6 +205,8 @@ html, body
         
 
 @media screen and (min-width: 800px)
+  .text
+    font-size: 18px
   .top-bar img
     width 100px
   .top-bar .logo-1
@@ -222,7 +227,8 @@ html, body
   .phrase
     margin: 32px 20px 0 0
   .phrase > p
-    font-size: 14px
+    font-size: 24px
+    padding: 0
   .title
     font-size 96px
   .main-section-img
