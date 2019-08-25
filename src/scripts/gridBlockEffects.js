@@ -78,16 +78,18 @@ export function initGridBlockEffect(parentEl, data) {
     tracksElems.forEach(trackEl => {
         trackEl.style.height = `${blockSize}px`
         trackEl.style.left = `-${blockSize}px`
+        trackEl.style.width = `calc(100% + ${blockSize}px)`
     })
 
     TweenMax.set('.square', {
         x: function(i, t) {
             const j = parseInt(t.getAttribute('track-index'))
-            return j * blockSize;
+            return j * blockSize;                    
         },
         height: blockSize,
         width: blockSize
     })
+
 
     TweenMax.to('.square.normal', speed, {
         ease: Linear.easeNone,
@@ -96,22 +98,28 @@ export function initGridBlockEffect(parentEl, data) {
         // opacity: 1
         repeat: -1,
         modifiers: {
-        x: function(x) {
-            return x % (window.innerWidth + blockSize);
-        }
+            x: function(x) {
+                return x % (window.innerWidth + blockSize);
+            }
         }
     })
+
+    function wrap(value, min, max) {
+        var v = value - min;
+        var r = max - min;
+    
+        return ((r + v % r) % r) + min;
+    }
 
     TweenMax.to('.square.inverse', speed, {
         ease: Linear.easeNone,
         x: `-=${window.innerWidth}`,
-        // y: 200,
-        // opacity: 1
         repeat: -1,
         modifiers: {
-        x: function(x) {
-            return x % (window.innerWidth + blockSize);
-        }
+            x: function(x) {
+                return wrap(x, 0, window.innerWidth + blockSize)
+                // return x % (window.innerWidth + blockSize);
+            }
         }
     })
 }
