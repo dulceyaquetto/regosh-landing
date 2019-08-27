@@ -1,6 +1,6 @@
 # ReGOSH Landing (0.9.0)
 
-**<Castellano>**
+**[Castellano]**
 
 Este repositorio contiene el codigo fuente del landing page de la residencia GOSH.
 
@@ -63,7 +63,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 # ReGOSH Landing (0.9.0)
 
-**<Português>**
+**[Português]**
 
 Este repositório contém o código-fonte da página Landing da residência GOSH.
 
