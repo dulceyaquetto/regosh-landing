@@ -117,3 +117,9 @@ Dentro do campo "membros" é onde as informações de cada membro são definidas
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para obter detalhes
+
+## Util Commands
+
+To push only dist directory into another branch (gh-pages), commit the changes in dist directory after built, then execute the following command line:
+
+        git subtree push --prefix dist origin-github gh-pages
