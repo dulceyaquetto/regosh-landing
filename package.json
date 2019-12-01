@@ -15,7 +15,7 @@
     "scss",
     "bootstrap"
   ],
-  "author": "Daniel Balastegui",
+  "author": "Anthony Arostegui",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",
