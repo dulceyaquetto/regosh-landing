@@ -84,7 +84,13 @@ export class Dialog {
             const dialogTitleEl = this.el.querySelector('.dialog--title')
             const dialogSubtitleEl = this.el.querySelector('.dialog--subtitle')
             const dialogParagraphEl = this.el.querySelector('.dialog--paragraph')
-            dialogTitleEl.innerHTML = tranlateString(data, 'title') // data.title
+
+            if(data['project_link'] !== undefined) {
+                dialogTitleEl.innerHTML = `<a target="_blank" href="${data['project_link']}">${tranlateString(data, 'title')}</a>` // data.title
+            } else {
+                dialogTitleEl.innerHTML = tranlateString(data, 'title') // data.title
+            }
+            
             dialogSubtitleEl.innerHTML = tranlateString(data, 'subtitle')  // data.subtitle
             dialogParagraphEl.innerHTML = tranlateString(data, 'description')  // data.description
             // const imageUrl = require(`${data.portrait_img_url}`)
