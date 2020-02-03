@@ -58,14 +58,16 @@
             "description_es": "Buscamos crear un sistema que permite monitorar la calidad del aire en áreas de alto riesgo de polución ambiental, desarrollando dispositivos de monitoramiento basados en sensores de bajo costo.",
             "description_en": "We're looking to create a system that allow to monitor the air quality in areas where there is high righ of pollution. The goal of the project is to develop monitoring devices at low cost to be accessible to any person.",
             "img_url": "assets//monitormedioambiente_360.png",
-            "portrait_img_url": "assets//monitormedioambiente_600x1000.png"
+            "portrait_img_url": "assets//monitormedioambiente_600x1000.png",
+            "project_link": "https://tecnologias.libres.cc/dulce.alarcon/monitor-ambiental-"
         },
         { 
             "title": "Biofabricación micelial",
             "subtitle": "Sustentabilidad y ecología",
             "description": "Projeto que visa cultivar fungos em substratos orgânicos, de forma que cresçam seus micélios e formem materiais biodegradáveis e sustentáveis.",
             "img_url": "assets//biocosas_360.png",
-            "portrait_img_url": "assets//biocosas_600x1000.png"
+            "portrait_img_url": "assets//biocosas_600x1000.png",
+            "project_link": "#"
         },
         { 
             "title": "Bioscopio",
