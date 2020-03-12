@@ -32,9 +32,9 @@
         "what_is_gosh_title_en": "What is Gosh?",
         "what_is_gosh_title_es": "¿Qué es GOSH?",
 
-        "what_is_gosh_description_pr": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit. [PR]",
-        "what_is_gosh_description_en": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit. [EN]",   
-        "what_is_gosh_description_es": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus sequi quidem nostrum sapiente totam tempora fuga, praesentium necessitatibus iusto aut voluptates illum aspernatur quos fugit nihil consequuntur inventore suscipit. [ES]",
+        "what_is_gosh_description_pr": "O movimento do Hardware Científico Aberto e Global (cuja sigla GOSH em inglês significa “Global Open Science Hardware”) busca reduzir as barreiras entre criadores e usuários de instrumentos científicos para apoiar a busca e a expansão do conhecimento. [PR]",
+        "what_is_gosh_description_en": "The Global Open Science Hardware (GOSH) movement seeks to reduce barriers between diverse creators and users of scientific tools to support the pursuit and growth of knowledge. [EN]",   
+        "what_is_gosh_description_es": " El movimiento por un Hardware Científico Global y Abierto (GOSH) busca reducir las barreras entre creadorxs y usuarixs de herramientas científicas para apoyar la búsqueda y el crecimiento del conocimiento. [ES]",
 
         "make_noise_title_pr": "FAÇA BARULHO",   
         "make_noise_title_en": "MAKE NOISE",
@@ -231,7 +231,28 @@
                     ]
                 },
                 {
-                    "nickname": "Dulce Alarcón Yaquetto",
+                    "nickname": "Dulce Esperanza Alarcón Yaquetto",
+                    "img_url": "https://bit.ly/2wTkyEk",
+                    "skills": ["Biology", "Physiology", "R programming", "Statistics"]
+                    "tags": ["Biologist", "Researcher"]
+                    "description": "Hola, me llamo Dulce. Soy Bióloga y tengo una Maestría en Informática Biomédica. Me dedico a la docencia e investigación en la Universidad Peruana Cayetano Heredia. Mis intereses de investigación incluyen (pero no están limitados a) el desarrollo e implementación de nuevas tecnologías en salud, salud ambiental y de altura.   ",
+                    "description_es": "Hola, me llamo Dulce. Soy Bióloga y tengo una Maestría en Informática Biomédica. Me dedico a la docencia e investigación en la Universidad Peruana Cayetano Heredia. Mis intereses de investigación incluyen (pero no están limitados a) el desarrollo e implementación de nuevas tecnologías en salud, salud ambiental y de altura.   "
+                    "description_en": "Hi, my name is Dulce. I am a Biologist and hold a Masters in Biomedical Informatics. I am currently a Professor and researcher at Universidad Peruana Cayetano Heredia. My research interests include (but are not limited to) the development and implementation of emerging technologies in health, high altitude physiology and environmental health. I am involved in several initiatives to promote open source hardware and software in science and community science. 
+                    "contact_list": [
+                        {
+                            "type": "email",
+                            "label": "email",
+                            "value": "dulce.alarcon@upch.pe",
+                            "link": "mailto:dulce.alarcon@upch.pe"
+                        },
+                        { "type": "facebook", "label": "fb", "value": "abc@abc.com", "link": "https://www.facebook.com/anandamidebliss" },
+                        { "type": "github", "label": "gh", "value": "abc@abc.com", "link": "https://github.com/dulceyaquetto" },
+                        { "type": "twitter", "label": "tw", "value": "abc@abc.com", "link": "https://twitter.com/dulceyaquetto" },
+                        { "type": "instagram", "label": "ig", "value": "abc@abc.com", "link": "https://www.instagram.com/dulceyaquetto" }
+                    ]
+                },
+                {
+                    "nickname": "Iván García Escobar",
                     "img_url": "assets//avatar.png",
                     "skills": [],
                     "tags": [],
@@ -250,7 +271,7 @@
                     ]
                 },
                 {
-                    "nickname": "Iván García Escobar",
+                    "nickname": "Jean Pierre Tincopa",
                     "img_url": "assets//avatar.png",
                     "skills": [],
                     "tags": [],
